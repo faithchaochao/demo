@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 400px;
+            height: 480px;
+        }
+        
+        legend {
+            color: red;
+        }
+        
+        label {
+            height: 30px;
+        }
+        
+        input {
+            width: 400px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生信息</h1>
+    <fieldset>
+        <legend id="legend">学生档案</legend>
+
+        <form id="testform" method="GET" action="#S">
+            <label for="name">姓名：</label>
+            <br/>
+            <input type="text" name="name1" required placeholder="请输入姓名" />
+            <br/>
+            <label for="no">学号：</label>
+            <br/>
+            <input type="text" name="no1" required placeholder="请输入学号" />
+            <br/>
+            <label for="phone">手机号码：</label>
+            <br/>
+            <input type="tel" name="phone" id="phone" required placeholder="请输入手机号" />
+            <br/>
+            <label for="email">邮箱地址：</label>
+            <br/>
+            <input type="email" name="email" id="email" required placeholder="请输入邮箱地址">
+            <br/>
+            <label for="school">录取学校：</label>
+            <br/>
+            <input type="text" name="school" list="mylist" />
+            <br/>
+            <label for="score">入学成绩：</label>
+            <br/>
+            <input type="text" name="score" id="score">
+            <br/>
+            <label for="inTime">入学时间：</label>
+            <br/>
+            <input type="date">
+            <br/>
+            <br/>
+            <input type="submit" style="color:gray;" value="提交" />
+            <datalist id="mylist">
+                     <option value="河北师范大学"></option>
+                     <option value="中国科技大学"></option>
+                     <option value="武汉大学"></option>
+                     <option value="北京大学"></option>
+            </datalist>
+        </form>
+    </fieldset>
+
+</body>
+
+
+</html>
